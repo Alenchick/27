@@ -1,0 +1,14 @@
+with open('27.txt','r') as s:
+    N = int(s.readline())
+    Dmin=100001
+    cnt=0 
+    for i in range(N):
+        a,b=map(int,s.readline().split())
+        d = min(a,b)
+        cnt = cnt + d
+        Dnim=min(d,Dmin)
+    if cnt %3 !=0:
+        print(cnt)
+    else:
+        cnt = cnt + Dmin
+        print(cnt)
